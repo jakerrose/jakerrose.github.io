@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Nav bar-->
+    <div class="Navbar">
+        <a href="./index.html">Home</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+    </div>
+
+    <body class="background">
+
+        <!----Background video-->
+        <video loop muted autoplay id="code">
+            <source src="./images/hello_world.mp4" type="video/mp4">
+            <!---if browser fails to run video:-->
+            Your browswer does not support HTML5 video
+        </video>
+
+<h2 class="white-text">Car Insurance Quote Generator</h2>
+<br />
+<div id="Slideshow">
+    <div id="Slideshow_Background">
+        <div id="Slideshow_Container2">
+
+            <!--Slide 1-->
+            <div class="mySlides fades">
+                <img class="Slideshow_Images2" src="./images/CarInsurance/Insurance1.png">
+                <div class="text">Heading of create page</div>
+            </div>
+            <!--previous and next buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--Slide 2-->
+            <div class="mySlides fades">
+                <img class="Slideshow_Images2" src="./images/CarInsurance/Insurance2.png">
+                <div class="text">
+                    Customer input form
+                </div>
+            </div>
+            <!--previous and next buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--Slide 3-->
+            <div class="mySlides fades">
+                <img class="Slideshow_Images2" src="./images/CarInsurance/Insurance3.png">
+                <div class="text">Customer details with quote</div>
+            </div>
+            <!--previous and next buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--Slide 4-->
+            <div class="mySlides fades">
+                <img class="Slideshow_Images2" src="./images/CarInsurance/InsuranceCSHTML.png">
+                <div class="text">CSHTML of create page using Razor syntax</div>
+            </div>
+            <!--previous and next buttons-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--Slide 5-->
+            <div class="mySlides fades">
+                <img class="Slideshow_Images2" src="./images/CarInsurance/InsuranceTable.png">
+                <div class="text">Insurees table </div>
+                <!--previous and next buttons-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+    <!--slideshow dots-->
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+</div>
+<br />
+<div class="Bar">
+    <h3>Details</h3>
+</div>
+<div class="portContainer">
+    <p class="pText">
+        <strong>Car Insurance MVC Web App</strong>
+        <br />
+        <br />
+        This is a working app to calculate a quote for car insurance based on user input such as age, car make and
+        model, and speeding tickets. It was built with the .NET framework and uses the MVC structure for web apps.
+        Entity Framework is employed to interact with a Sql Server database. The entity data model was created using
+        database first approach.
+</div>
+
+
+
+
+
+
+
+
+
+
+    <!-----Contact section-->
+    <div id="contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+            <h1>Contact</h1>
+            <form action="https://formspree.io/f/mnqyreql" method="post" class="form-container">
+                <label for="name"><b>Name</b></label>
+                <input type="text" name="Name" placeholder="Please Enter Your Name Here" required>
+                <label for="email"><b>Email</b></label>
+                <input type="text" name="Email" placeholder="Please Enter Your Email Here" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" name="Message" id="message" placeholder="Please Type Your Message Here" required>
+    
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container body-content">
+        <hr />
+        <footer class="footer">
+            <p class="white-text">&copy2023 Jake Rose</p>
+        </footer>
+    </div>
+    
+    <script src="./JS/main.js"></script>
+    </body>
